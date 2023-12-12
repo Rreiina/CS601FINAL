@@ -114,13 +114,6 @@
       margin-right: 80px;
   }
   
-  .fade-in {  
-      width: 500px;
-      border-radius: 8px;
-      box-shadow: 15px 15px 5px rgb(240, 204, 204);
-      animation: fadeIn ease 6s;
-  }
-  
 .buttonDrive {
   margin-right: -70%;
     }
