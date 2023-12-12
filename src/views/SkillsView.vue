@@ -40,7 +40,7 @@
                   <li>Node.js</li>
               </ul>
           </section>
-         <!-- -- catch data-- -->
+       
           <section> 
              <h2>Education</h2> 
              <p>Please click here to get quickly table: &#x1F447;&#x1F447;&#x1F447;</p>      
