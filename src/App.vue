@@ -28,8 +28,8 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #ff69b4; /* 鼠标悬停时的背景色（粉色） */
-  color: rgb(19, 17, 17); /* 鼠标悬停时的字体颜色 */
+  background-color: #ff69b4;
+  color: rgb(19, 17, 17); 
 }
 
 
