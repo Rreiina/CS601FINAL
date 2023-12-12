@@ -1,0 +1,152 @@
+/* ----------------------- Pages use grid ---------------------- */
+/* media query, which indicates that the CSS rules in it will take effect when the screen
+ is 1100 pixels wide or wider. */
+@media (min-width: 1100px) {
+    .grid-container {
+        margin-left: -5%;
+        width: 100%;
+        display: grid;
+        font-size: 21px;
+        grid-template-areas:
+            'img        img'
+            'main       aside'
+            'main       aside'
+            'main       aside'
+            'footer     footer';
+    }
+}
+
+@media (max-width: 1100px) {
+    .grid-container {
+        margin-left: -5%;
+        width: 100%;
+        display: grid;
+        font-size: 21px;
+        grid-template-areas:
+            'img        img'
+            'main       main'
+            'main       main'
+            'main       main'
+            'footer     footer';
+    }
+    /* When screen width is less than 1100px, aside display is disabled */
+    aside {
+        display: none;
+    }
+
+    main {
+        margin-left: 50px;
+    }
+
+    .aside-iframe { 
+        display: none;
+    }
+}
+/* --- Fade in slide right effect --- */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translate3d(10%, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+}
+  
+.fadeIn {
+    animation-name: fadeInRight;
+}
+/* ---- End of fade in slide right effect ---- */
+
+
+
+.grid-img {
+    grid-area: img;
+    width: 1000px;
+    justify-content: start;
+}
+
+main { 
+    grid-area: main; 
+    width: 100%;
+}
+
+aside { 
+    grid-area: aside; 
+    text-align: center;
+    display: block;
+    margin-right: 50px;
+    margin-left: 0px;
+}
+
+aside a {
+    margin-right: 0px;
+    margin-left: 0px;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* Cursor hovers, background and text color changes */
+aside a:hover {      
+    color: #985d6a;
+    background-color: #efefef;
+}
+
+/* Class of aside-iframe styling, aside at right side of the pages */
+.aside-iframe { 
+    grid-area: aside;              
+    width: 400px;
+    margin-top: 200px;
+    margin-left: -100px;  
+    padding: 0px 0px 0px 0px;
+    background-color: transparent;
+}
+
+.main-iframe {
+    grid-area: main; 
+    margin: 0px 0px 10px 10px;  /* Other parts move downwards to avoid being covered by images */
+    color: #000000;
+    width: 650px;
+}
+
+/* -- Grid footer styles -- */
+footer { 
+    grid-area: footer; 
+    width: 1100px;
+    padding: 5px;
+    clear: both;
+    color: #ffffff;            /* Footer font color */
+    font-family: "Margarine";    /* Customized font for footer texts */
+    height: 30px;
+    text-align: center;
+}
+/* --------------------------- Grid ends ------------------- */
+
+body{
+    font-family: sans-serif;
+    font-size: 16pt;
+    background: linear-gradient(to right, #b954ce, #ff6600);
+    color: #000000;    /* Body font color */
+    max-width: 1005px;
+    margin: auto;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;    /* Header font color */ 
+    padding: 50px;
+    height: 40px;
+    margin: 0px;
+}
+
+#printnotice {
+    display: none;
+}

@@ -1,0 +1,28 @@
+{
+    "Schools": [ {
+        "Name": "Boston University",
+        "Major": "Software Development",
+        "Type": "MS",
+        "Location": "Massachusetts, Boston",
+        "Year_Conferred": 2021
+      },
+      { "Name": "University of Carlifornia SantaCruz ",
+      "Major": "C+",
+      "Type": "Certification",
+      "Location": "Los Angeles, Carlifornia",
+      "Year_Conferred": 2020
+     },
+      { "Name": "University South Carlifornia",
+      "Major": "Business Analyst",
+      "Type": "BA",
+      "Location": "Los Angeles, Carlifornia",
+      "Year_Conferred": 2011
+      },
+      { "Name": "Pasadena Highschool ",
+      "Major": "General Course",
+      "Type": "Certification",
+      "Location": "Los Angeles, Carlifornia",
+      "Year_Conferred": 2011
+    }
+    ]
+}
